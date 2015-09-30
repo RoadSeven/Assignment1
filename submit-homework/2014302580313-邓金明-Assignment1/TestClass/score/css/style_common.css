@@ -1,0 +1,1414 @@
+@charset "gb2312";
+/* CSS Document */
+/*********************************
+
+公用css属性
+*********************************/
+table{
+/*border-collapse:collapse;*/
+
+}
+.navegate{padding:0px 3px;}
+.table{
+	/*width:920px;*/
+	width:100%;
+	border-collapse:collapse;
+	background-color:#FFF;
+	text-align:center;
+	font-size:13px;
+}
+
+a:link,a:visited{
+	text-decoration: none;
+	color: #005197;
+}
+a:hover{
+	text-decoration: underline;
+}
+.menu_item_logout{
+	margin-bottom:-7px;
+	width:22px;
+	height:23px;
+	display:inline-block;
+	background-image: url(../images/boy_bg.png);
+	background-repeat:no-repeat;
+	background-position:-529px -66px;
+}
+.menu_item_resetpwd{
+	margin-bottom:-6px;
+	width:22px;
+	height:23px;
+	display:inline-block;
+	background-image: url(../images/boy_bg.png);
+	background-repeat:no-repeat;
+	background-position:-504px -66px;
+}
+.menu_item_help{
+	margin-bottom:-6px;
+	width:22px;
+	height:23px;
+	display:inline-block;
+	background-image: url(../images/boy_bg.png);
+	background-repeat:no-repeat;
+	background-position:-504px -39px;
+}
+
+/************************************************
+*******************overlay弹出框标题样式*******************
+************************************************/
+.overlay_title h2{
+    color: #005197;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+	letter-spacing:8px;
+}
+/************************************************
+*******************主页面样式*******************
+************************************************/
+*{
+	margin:0;
+	padding:0;
+}
+html, body, #container {height: 100%;}
+body > #container {height: auto; min-height: 100%;}
+body{
+	text-align:center;
+	font-size:12px;
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+	color:#000;
+	overflow：hidden;
+	/*background-color: #6B91B6;*/
+}
+.clearfix:after {content: ".";
+ display: block;
+ height: 0;
+ clear: both;
+ visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+body.greyBg{
+		background-color: #dddddd;
+	}
+
+#container{
+	position:relative;
+	margin:0px auto;
+	min-width: 950px;
+	max-width: 1280px;
+	border:0px solid;
+}
+#main_contaier,#teacher_main_contaier{
+	
+	background-image:url(../images/index_bg_new.png);
+	background-repeat:repeat;
+	margin-bottom:54px;
+	height:800px;
+	/*width:1280px;*/
+}
+#teacher_main_contaier{
+	background-image:url(../images/teacher_index_bg.png);
+	}
+#admin_main_contaier{
+background-image:url(../images/index_bg.png);
+}
+
+#top{
+	height:55px;
+	padding-right:30px;
+	min-width: 900px;
+	background-color:#f9f9f9;
+}
+#school{
+	background-image:url(../images/boy_bg.png);
+	width:157px;
+	height:50px;
+	background-position:-94px -6px;
+	float:left;
+	margin-left:32px;
+	cursor: pointer;
+}
+#system{
+	background-image:url(../images/boy_bg.png);
+	width:151px;height:30px;
+	background-position:-93px -56px;
+	float:left;
+	margin-top:21px;
+	cursor: pointer;
+}
+#header{
+	margin-left:20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+#header_label{
+	text-align:right;
+	padding-top:10px;
+	padding-right:20px;
+	color:#FFF;
+}
+#content{
+	height:100%;
+	/*height:660px;*/
+	min-width:950px;
+	margin:0 38px;
+}
+.first-part-footer,.second-part-footer{
+	float: left;
+	width: 350px;
+}
+.second-part-footer{
+	float: left;
+	width: 270px;
+	padding: 11px 0px;
+}
+.first-part{
+	float: left;
+	line-height: 75px;
+}
+.second-part{
+	float: left;
+	margin-left: 40px;
+}
+#footer p {
+	line-height: 25px;
+}
+.second-part p {
+	text-align: left;
+}
+.footer-oper{
+	float: right;
+	margin-left: 40px;
+	
+}
+.border-right{
+	float: left;
+	border-right: 1px solid #ddd;
+	height: 75px;
+	padding: 0px 20px;
+	
+}
+#footer{
+	/*background-image:url(../images/footer.png);
+	background-repeat:repeat-x;
+	background-position:0 -10px;	
+	*/
+	in-width: 780px;
+	max-width: 1280px;
+	margin: 0px auto;
+	font-size: 14px;
+	line-height: 25px;
+	color: #FFF;
+	font-family: "宋体";
+	margin-top: -54px;
+	height: 90px;
+	clear: both;
+	width: 710px;
+	margin: auto;
+}
+#footer.stu_footer{
+	/*background-image:url(../images/stu_footer1.png);*/
+	background-color:#6B91B6;
+	}
+#footer.tea_footer{
+	/*background-image:url(../images/stu_footer1.png);*/
+	background-color:#4B616F;
+	}
+#menu{
+	margin:0px;
+}
+
+#btn1{
+	background-position:-10px -172px;
+	background-image:url(../images/boy_bg.png);
+}
+#btn1:hover{
+	background-image:url(../images/menu_buttons_fc3.png);
+	background-position:-31px -108px;
+}
+#btn1.current{
+	background-image:url(../images/menu_buttons_fc3.png);
+	background-position:-31px -108px;
+}
+
+#btn2{
+	background-image:url(../images/boy_bg.png);
+	background-position:-88px -172px;
+}
+#btn2:hover{
+	background-image:url(../images/menu_buttons_fc3.png);
+	background-position:-661px -108px;
+}
+#btn2.current{
+	background-image:url(../images/menu_buttons_fc3.png);
+	background-position:-661px -108px;
+}
+
+#btn3{
+	background-image:url(../images/boy_bg.png);
+	background-position:-169px -172px;
+}
+#btn3:hover{
+	background-position:-120px -108px;
+	
+	background-image:url(../images/menu_buttons_fc3.png);
+}
+#btn3.current{
+	background-position:-120px -108px;
+	background-image:url(../images/menu_buttons_fc3.png);
+}
+
+#btn4{
+	background-image:url(../images/boy_bg.png);
+	background-position:-249px -172px;
+}
+#btn4:hover{
+	background-image:url(../images/menu_buttons_fc3.png);
+	background-position:-753px -108px;
+}
+#btn4.current{
+	background-image:url(../images/menu_buttons_fc3.png);
+	
+	background-position:-753px -108px;
+}
+
+#btn5{
+	background-image:url(../images/menu_buttons_fc3.png);
+	background-position:-842px -263px;
+	
+}
+#btn5:hover{
+	background-image:url(../images/menu_buttons_fc3.png);
+	background-position:-842px -107px;
+}
+#btn5.current{
+	background-image:url(../images/menu_buttons_fc3.png);
+	
+	background-position:-842px -107px;
+}
+#btn7{
+	background-image:url(../images/menu_buttons_fc4.png);
+	background-position:-935px -267px;
+	
+}
+#btn7:hover{
+	background-image:url(../images/menu_buttons_fc4.png);
+	background-position:-935px -111px;
+	
+}
+#btn7.current{
+	background-image:url(../images/menu_buttons_fc4.png);
+	background-position:-935px -111px;
+	
+}
+#menu li#btn6{
+	background-image:url(../images/boy_bg.png);
+	background-position:-409px -172px;
+}
+#menu li#btn6:hover{
+	background-image:url(../images/menu_buttons_fc3.png);
+	
+	background-position:-572px -108px;
+}
+#menu li#btn6.current{
+	background-image:url(../images/menu_buttons_fc3.png);
+	
+	background-position:-572px -108px;
+}
+
+/*
+男生版
+#btn1{
+	background-position:-10px -172px;
+}
+#btn1:hover{
+	background-position:-10px -92px;
+}
+#btn1.current{
+	background-position:-10px -92px;
+}
+
+#btn2{
+	background-position:-88px -172px;
+}
+#btn2:hover{
+	background-position:-88px -92px;
+}
+#btn2.current{
+	background-position:-88px -92px;
+}
+
+#btn3{
+	background-position:-169px -172px;
+}
+#btn3:hover{
+	background-position:-169px -92px;
+}
+#btn3.current{
+	background-position:-169px -92px;
+}
+
+#btn4{
+	background-position:-249px -172px;
+}
+#btn4:hover{
+	background-position:-249px -92px;
+}
+#btn4.current{
+	background-position:-249px -92px;
+}
+
+#btn5{
+	background-position:-328px -172px;
+}
+#btn5:hover{
+	background-position:-328px -92px;
+}
+#btn5.current{
+	background-position:-328px -92px;
+}
+
+#menu li#btn6{
+	background-position:-409px -172px;
+}
+#menu li#btn6:hover{
+	background-position:-409px -92px;
+}
+#menu li#btn6.current{
+	background-position:-409px -92px;
+}*/
+
+/*课程表 北京专业版
+#btn1{
+	background-position:-30px -15px;
+}
+#btn1:hover{
+	background-position:-30px -94px;
+}
+#btn1.current{
+	background-position:-30px -171px;
+}
+
+#btn2{
+	background-position:-662px -15px;
+}
+#btn2:hover{
+	background-position:-662px -94px;
+}
+#btn2.current{
+	background-position:-662px -171px;
+}
+教学评估
+#btn4{
+	background-position:-753px -15px;
+}
+#btn4:hover{
+	background-position:-753px -94px;
+}
+#btn4.current{
+	background-position:-753px -171px;
+}
+学费学分
+#btn5{
+	background-position:-842px -15px;
+}
+#btn5:hover{
+	background-position:-842px -94px;
+}
+#btn5.current{
+	background-position:-842px -171px;
+}
+培养方案
+#btn6{
+	background-position:-572px -15px;
+}
+#btn6:hover{
+	background-position:-572px -94px;
+}
+#btn6.current{
+	background-position:-572px -171px;
+}
+成绩
+#menu li#btn3{
+	background-position:-120px -15px;
+}
+#menu li#btn3:hover{
+	background-position:-120px -94px;
+}
+#menu li#btn3.current{
+	background-position:-120px -171px;
+}
+*/
+/*教师页面切换选项卡的btn样式*/
+#btn_tea_jxpg{
+	background-image: url("../images/menu_buttons_fc3.png");
+	background-position:-301px -264px;
+}
+#btn_tea_jxpg:hover{
+	background-image: url("../images/menu_buttons_fc3.png");
+	background-position:-301px -108px;
+}
+#btn_tea_jxpg.current{
+	background-image: url("../images/menu_buttons_fc3.png");
+	background-position:-301px -108px;
+}
+#btn_tea_ks{
+	background-image: url("../images/menu_buttons_fc3.png");
+	background-position:-211px -264px;
+	}
+#btn_tea_ks:hover{
+	background-image: url("../images/menu_buttons_fc3.png");
+	background-position:-211px -108px;
+	}
+#btn_tea_ks.current{
+	background-image: url("../images/menu_buttons_fc3.png");
+	background-position:-211px -108px;
+	}
+#btn_tea_xj{
+	background-image: url("../images/menu_buttons_fc3.png");
+	background-position:-390px -264px;
+	}
+#btn_tea_xj:hover{
+	background-image: url("../images/menu_buttons_fc3.png");
+	background-position:-390px -108px;
+	}
+#btn_tea_xj.current{
+	background-image: url("../images/menu_buttons_fc3.png");
+	background-position:-390px -108px;
+	}
+#btn_tea_rl{
+	background-image: url("../images/menu_buttons_fc3.png");
+	background-position:-482px -264px;
+	}
+#btn_tea_rl:hover{
+	background-image: url("../images/menu_buttons_fc3.png");
+	background-position:-482px -108px;
+	}
+#btn_tea_rl.current{
+	background-image: url("../images/menu_buttons_fc3.png");
+	background-position:-482px -108px;
+	}
+#left_bar{
+	/*width:949px;
+	max-width:949px;*/
+	margin-right:255px;
+	height:100%;
+}
+#right_bar{
+	width:218px;
+	height:100%;
+	margin-left:35px;
+}
+.float_left{
+	float:left;
+}
+#page_iframe,#bar_iframe{
+	width:100%;
+	height:100%;
+}
+#bar_iframe{
+	
+	background-repeat:no-repeat;
+	background-position:right bottom;
+}
+#iframe0,#iframe1,#iframe2,#iframe3,#iframe4,#iframe5{
+	
+	border: 0px;
+}
+
+#login_info{
+	font-family:"微软雅黑";
+	margin-top:35px;
+	margin-right:35px;
+	float:right;
+
+}
+#login_info img{
+	margin-bottom:2px;
+}
+#nameLable{
+	float:right;
+	margin-right:-35px;
+	cursor: pointer;
+
+	}
+#login_info2{
+/*	float:right;	*/
+	margin-right:30px;
+	margin-top:-1px;	
+}
+
+#term{
+	color:#000;
+	font-family:"微软雅黑";
+	font-weight:bold;
+	font-size:14px;
+	margin-right:55px;
+}
+#acade{
+	color:#000;
+	font-family:"微软雅黑";
+	font-size:14px;
+}
+.clear{
+	clear:both;
+}
+
+
+/************************************************
+****************课程表页面样式*******************
+************************************************/
+.currentWeek{
+	background-color: #f3f3f3;
+	}
+.timeLable{
+	color: #989898;
+	}
+.courseTable{
+	clear:both;
+	/*width:949px;*/
+	width:100%;
+	border-collapse:collapse;
+	background-color:#FFF;
+	text-align:center;
+	font-size:13px;
+}
+.changePswTb{
+	clear:both;
+	width:100%;
+	border-collapse:collapse;
+	text-align:center;
+	font-size:13px;
+}
+.changePswTb th{
+	width: 30%;
+	border: 0;
+	text-align: right;
+	padding-right: 10px;
+}
+.changePswTb thead td{
+	width:100%;
+	text-align:center;
+	font-size:18px;
+	font-weight: bolder;
+	padding-bottom: 15px;
+}
+.courseTable thead td{
+	width:47px;
+}
+
+.courseTable thead th{
+	width:122px;
+	font-size:16px;
+}
+.courseTable thead div{
+	padding-left: 30px;
+}
+.courseTable td{
+/*text-align:center;*/
+}	
+/**********CourseTableHead***********/
+#courseTableHead{
+	/*width:949px;*/
+	height:69px;
+	margin-right: 5px;
+}
+#courseTableHead div{
+	/*float:left;*/
+	height:69px;
+	overflow:hidden;
+}
+#courseTableHead img{
+	margin-top:14px;
+	cursor:pointer;
+}
+
+
+#thead_title span{
+	color:#FFF;
+	font-family:"微软雅黑";
+	font-size:24px;
+	height:50px;
+	display:block;
+	padding-top:28px;
+	
+}
+#nextSemester{
+	float: right;
+	position:relative;
+	left:6px;
+	z-index: 10;
+	}
+#preSemester{
+	float: left;
+	}
+#nextSemester img{
+	margin-left:-1px;
+}
+#preSemester img{
+}
+/************************************/
+#am_line td{
+	border-bottom:1px solid #000;
+}
+#line td,#line th{
+	border-bottom:1px solid #ddd;
+}
+#pm_line td{
+	border-bottom:1px solid #000;
+}
+th{
+	border:1px solid #ccc;
+	height:27px;
+	font-size:15px;
+}
+/*
+td{
+border:1px solid #ccc;
+}
+*/
+.courseTable td {
+	border:1px solid #ccc;
+	height:37px;
+}
+.tableFoot{
+	clear:both;
+	/*width:949px;*/
+	height:15px;
+	margin: 0 5px;
+	background-color: white;
+}
+.panelHead{
+	/*width:949px;*/
+	height:15px;
+	background-color: white;
+	margin-right: 5px;
+}
+.tableFoot .corner_left{
+	float:left;
+	width:15px;
+	height:15px;
+	background-image:url(../images/round_corner_left.png);
+	background-repeat:no-repeat;
+	background-position:left bottom;
+	font-size:0px;
+	position: relative;
+	right: 5px;
+}
+.tableFoot .corner_right{
+	float:right;
+	width:16px;
+	height:15px;
+	background-image:url(../images/round_corner_right.png);
+	background-repeat:no-repeat;
+	background-position:right bottom;
+	position: relative;
+	left: 5px;
+}
+.tableFoot .corner_center{
+	/*float:left;
+	width:918px;*/
+	margin:0 10px;
+	height:15px;
+	background-color:#FFF;
+}
+.panelHead .corner_center{
+	/*width:934px;*/
+	margin-right: 3px;
+}
+.panelHead .corner_right{
+	width:15px;
+	height:15px;
+	float:right;
+	background-image:url(../images/round_corner_up_right.png);
+	position: relative;
+	left:5px;
+	/*-moz-transForm:scaleY(-1);
+    -webkit-transform:scaleY(-1);
+    -o-transform:scaleY(-1);
+    transform:scaleY(-1);
+    IE
+    filter:FlipV;*/
+}
+tr.alt td {
+	background:#eff2ff;
+} /*这行将给所有的tr加上背景色*/
+tr.over td {
+	background:#fff1e8;
+} /*这个将是鼠标高亮行的背景色*/
+td.over {
+	background:#fff1e8;
+} /*这个将是鼠标高亮行的背景色*/
+
+
+/************************************************
+****************小日历样式***********************
+************************************************/
+
+/* the input field */
+.date {
+    border:1px solid #ccc;
+    font-size:18px;
+    padding:4px;
+    text-align:center;
+    width:194px;
+/*
+    -moz-box-shadow:0 0 10px #eee inset;
+    -webkit-box-shadow:0 0 10px #eee inset;
+	*/
+}
+
+/* calendar root element */
+#calroot {
+    /* place on top of other elements. set a higher value if nessessary */
+    z-index:10000;
+	position:absolute;
+	top:0px;
+	left:0px;
+    margin-top:-12px;
+    width:218px;
+    font-size:12px;
+	background-image:url(../images/small_calendar_foot.png);
+	background-position:bottom;
+	padding-bottom:5px;
+	background-repeat:no-repeat;
+	
+/*
+    -moz-box-shadow: 0 0 15px #666;
+    -webkit-box-shadow: 0 0 15px #666;
+*/
+}
+
+/* head. contains title, prev/next month controls and possible month/year selectors */
+#calhead {
+    height:49px;
+	width:218px;
+}
+
+
+
+#calprev.caldisabled, #calnext.caldisabled {
+    visibility:hidden;
+}
+
+/* year/month selector */
+#caltitle select {
+    font-size:10px;
+}
+
+/* names of the days */
+#caldays {
+    height:29px;
+	line-height:29px;
+    border-bottom:1px solid #f0efef;
+	background-color:#FFF;
+}
+
+#caldays span {
+    display:block;
+    float:left;
+    width:30px;
+    text-align:center;
+}
+
+/* container for weeks */
+#calweeks {
+    background-color:#fff;
+}
+
+/* single week */
+.calweek {
+    clear:left;
+    height:29px;
+}
+
+/* single day */
+.calweek a {
+    display:block;
+    float:left;
+    width:30px;
+    height:29px;
+    line-height:29px;
+    text-decoration:none;
+    font-family:"Myriad Pro";
+    font-size:13px;
+    margin-left:1px;
+    text-align:center;
+    color:#666;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+
+/* different states */
+.calweek a:hover {
+    background-color:#foefef;
+}
+
+
+/* sunday */
+a.calsun {
+    color:red;
+}
+
+/* offmonth day */
+a.caloff {
+    color:#ccc;
+}
+
+a.caloff:hover {
+    background-color:rgb(245, 245, 250);
+}
+
+
+/* unselecteble day */
+a.caldisabled {
+    background-color:#efefef !important;
+    color:#ccc	!important;
+    cursor:default;
+}
+
+/* current day */
+
+
+/* today */
+
+#selectedCourse{
+	width:218px;
+}
+
+
+/************************************************
+****************已选课程列表侧边栏样式*****************
+************************************************/
+#listHead,.listHead{
+	height:8px;
+	background-image:url(../images/small_calendar_foot.png);
+	background-repeat:no-repeat;
+	-moz-transForm:scaleY(-1);
+    -webkit-transform:scaleY(-1);
+    -o-transform:scaleY(-1);
+    transform:scaleY(-1);
+    /*IE*/
+    filter:FlipV;
+}
+#listFoot,.listFoot{
+	height:8px;
+	background-repeat:no-repeat;
+	background-image:url(../images/small_calendar_foot.png);
+}
+#listContent,.listContent{
+	width:217px;
+	padding:8px 0;
+	background-color:#FFF;
+}
+#listContent ul{
+	list-style:none;
+}
+#listContent ul li{
+	margin:4px 0;
+}
+.listTitle{
+	font-size: 16px;
+	font-weight: bold;
+	color: #005197;
+	font-family:"微软雅黑";
+	letter-spacing:2px;
+}
+
+.col_course{
+	display:inline-block;
+	width:120px;
+}
+.col_score{
+	display:inline-block;
+	width:55px
+}
+#listContent .courseTable{
+	width:inherit;	
+}
+
+
+/************************************************
+****************列表样式*****************
+************************************************/
+.listTable{
+	border:0;
+	text-align:center;
+	border-collapse:collapse;
+}
+.listTable td{
+	padding:2px 2px;
+	height:25px;
+	font-size:12px;
+	border:1px solid #ccc;
+}
+.listTable th{
+	font-size:12px;
+	background-color:#cdd8ea;
+}
+.btn{
+	background:url(../images/button_bg.png) no-repeat scroll transparent;
+	background-image:url(../images/button_bg.png) ;
+	width:65px;
+	height:25px;
+	padding:0 10px;
+	border:0;
+	cursor:pointer;
+}
+.searchBtb{
+	color:#FFF;
+	background-image:url(../images/btn_bg.png) ;
+	width:63px;
+	height:23px;
+	background-position:0 -24px;
+	padding:0 10px;
+	border:0;
+	cursor:pointer;
+	margin-left:10px;
+}
+.course_shift{	
+   /* float:right;*/
+   	background:url(../images/boy_bg.png) no-repeat scroll transparent;
+	background-image:url(../images/boy_bg.png) ;
+	background-position:-280px -57px;
+	width:71px;
+	height:30px;
+	padding:0 10px;
+	border:0;
+    margin-top:32px;
+    margin-right:10px;
+
+
+	cursor:pointer;
+}/*
+#liebiao{
+	background-image:url(../images/boy_bg.png) ;
+	width:68px;height:88px;background-position:-487px -92px;
+	 position:absolute;
+     left:880px;
+     top:105px;
+}*/
+.input{
+	height:20px;
+	padding:0px;
+	margin:0px;
+}
+.page_nav{
+	padding-top:10px;
+}
+.total_count{
+	width:100%;
+}
+#searchBox{
+	height:35px;
+	
+}
+.panelContent{
+	background-color:#FFF;
+}
+/*
+.close{
+    background: url("../img/dialog_close.png") no-repeat scroll 0 0 transparent;
+    position:absolute;
+	border:1px solid #E0E0E0;
+    right:5px;
+    top:5px;
+    cursor:pointer;
+    height:9px;
+    width:9px;
+	
+}
+.close:hover{
+background-position:-22px 0;
+}*/
+.close{
+    background: url("../images/boy_bg.png") no-repeat scroll 0 0 transparent;
+    position:absolute;
+    background-position:-586px -57px;
+	border:0px solid #E0E0E0;
+    right:5px;
+    top:5px;
+    cursor:pointer;
+    height:32px;
+    width:32px;
+	margin-right: -20px;
+    margin-top: -20px;
+}
+.close:hover{
+	background-position:-553px -57px;
+}
+.downList{
+	margin-top:35px;
+}
+.downList1{
+	margin-top:10px;
+}
+table.tsxkTable{
+	/*width:916px;*/
+	width:100%;
+	border:0;
+    background-color:#fff;
+}
+/*******************************/
+选课页面
+/******************************/
+.xkFoot{
+	clear:both;
+	width:916px;
+	height:15px;
+}
+.xkFoot .corner_left{
+	float:left;
+	width:15px;
+	height:15px;
+	background-image:url(../images/round_corner_left.png);
+	background-repeat:no-repeat;
+	background-position:left bottom;
+	font-size:0px;
+}
+.xkFoot .corner_right{
+	float:left;
+	width:16px;
+	height:15px;
+	background-image:url(../images/round_corner_right.png);
+	background-repeat:no-repeat;
+	background-position:right bottom;
+	font-size:0px;
+}
+.xkFoot .corner_center{
+	float:left;
+	width:885px;
+	height:15px;
+	background-color:#FFF;
+	font-size:0px;
+}
+.corner_right{
+	float:left;
+	width:16px;
+	height:15px;
+	background-image:url(../images/round_corner_right.png);
+	background-repeat:no-repeat;
+	background-position:right bottom;
+	font-size:0px;
+}
+.corner_center{
+	/*float:left;
+	width:900px;*/
+	height:15px;
+	background-color:#FFF;
+	border:none;
+	font-size:0px;
+}
+#iframe0,#iframe1,#iframe2,#iframe3,#iframe4,#iframe5{
+height:590px;
+/*width:949px;*/
+width: 100%;
+/*height: 100%;*/
+}
+td div.overflow{
+	white-space:nowrap;
+	overflow:hidden;
+	width: 100%;
+}
+.tipInfo{
+	font-style: italic;
+	font-size: 11px;
+	margin-top:-10px;
+	padding: 0px 20px 3px 0px;
+	text-align: right;
+	color: #666666;
+}
+/*管理员界面按钮*/
+#menu2 li{
+	margin:10px 10px;
+	background-repeat:no-repeat;
+	background-image:url(../images/menu_buttons_manager.png);
+	list-style:none;
+	float:left;
+	width:77px;
+	height:77px;
+	cursor:pointer;
+}
+
+/*参数设置*/
+#btn111{
+	background-position:-26px -24px;
+}
+#btn111:hover{
+	background-position:-26px -123px;
+}
+#btn111.current{
+	background-position:-26px -220px;
+}
+
+/*参数刷新*/
+#btn222{
+	background-position:-136px -24px;
+}
+#btn222:hover{
+	background-position:-136px -123px;
+}
+#btn222.current{
+	background-position:-136px -220px;
+}
+
+/*选课处理*/
+#btn333{
+	background-position:-245px -24px;
+}
+#btn333:hover{
+	background-position:-245px -123px;
+}
+#btn333.current{
+	background-position:-245px -220px;
+}
+.btn_admin{
+	background:url(../images/btn_admin.png) no-repeat scroll transparent;
+	background-image:url(../images/btn_admin.png) ;
+	width:120px;
+	height:25px;
+	padding:0 10px;
+	border:0;
+	cursor:pointer;
+}
+.long_btn{
+	background:url(../images/long_btn.png) no-repeat scroll transparent;
+	background-image:url(../images/long_btn.png) ;
+	background-position:-7px -29px;
+	width:119px;
+	height:23px;
+	padding:0 10px;
+	border:0;
+	cursor:pointer;
+}
+.long_btn1{
+    background:url(../images/long_btn.png) no-repeat scroll transparent;
+	background-image:url(../images/long_btn.png) ;
+	background-position:-19px -4px;
+	width:92px;
+	height:23px;
+	padding:0 10px;
+	border:0;
+	cursor:pointer;
+}.long_btn2{
+    background:url(../images/long_btn1.png) no-repeat scroll transparent;
+	background-image:url(../images/long_btn1.png) ;
+	background-position:-2px -53px;
+	width:147px;
+	height:23px;
+	padding:0 10px;
+	border:0;
+	cursor:pointer;
+}
+.listTable1{
+	border:0;
+	width:1198px;
+	text-align:center;
+	border-collapse:collapse;
+}
+.listTable1 td{
+	padding:2px 2px;
+	height:25px;
+	font-size:12px;
+	border:1px solid #ccc;
+}
+.listTable1 th{
+	font-size:12px;
+	background-color:#cdd8ea;
+}
+.a_btn{
+	
+	background-image:url(../images/long_btn.png) ;
+	background-position:-19px -4px;
+	width:92px;
+	height:23px;
+	float:right;
+	display:inline-block;
+	line-height:22px;
+	cursor:pointer;
+	margin-right: 10px;
+}
+/* login.css*/
+/********************************************
+*********************************************
+*********************************************/
+
+#loginBox{
+	background-image:url(../images/loginboxbg3.png);
+	background-repeat:no-repeat;
+	height:351px;
+	width:820px;
+	margin:180px auto;
+	padding-top:60px;
+}
+
+#loginInputBox{
+	text-align:left;
+	border:0;
+	border-collapse:collapse;
+	float:right;
+	/*没有版权信息
+	width:51%;
+	margin-right:120px;
+	*/
+	width:55%;
+	margin-right:100px;
+	color:#666;
+	font-size:16px;
+	font-weight:bold;
+	vertical-align:middle;
+}
+#loginInputBox td{
+	border:0px solid;
+}
+#loginInputBox .label {
+	padding-right:10px;
+	text-align:right;
+	display:inline-block;
+	line-height:30px;
+	width:100px;
+
+}
+.inputWraper{
+	width:230px;
+	margin:5px 0;
+	height:30px;
+	line-height:30px;
+	border:1px solid;
+	border-color:#666;
+	padding:1px;
+}
+.inputWraper input{
+	border:0;
+	height:30px;
+	line-height:30px;
+	width:100%;
+}
+#loginBtn{
+	background-image:url(../images/boy_bg.png);
+	background-position:-10px -10px;
+	width:82px;
+	height:81px;
+	border:0;
+	cursor:pointer;
+}
+.calfocus{
+    width:30px;
+    height:29px;
+   	/*background:transparent url(../images/boy_bg.png) no-repeat scroll ;*/
+	background-position:-354px -57px;
+	
+}
+#calcurrent {
+    width:30px;
+    height:29px;  
+    background-color: #ddd;
+}
+#caltoday {
+     width:30px;
+    height:29px;
+	background:transparent url(../images/boy_bg.png) no-repeat scroll ;
+	background-position:-354px -57px;
+	background-color: #F0EFEF;
+	
+}
+.currentWeek{
+	background-color: #f3f3f3;
+	}
+a.dayOfCurrentWeek{
+	background-color: #f0efef;
+	color: #000;
+}
+.datetip{
+	float: right;
+	font-size:9px;
+	margin-top:15px;
+	margin-right:5px;
+	color:#000;
+	font-weight:normal;
+}
+.checkBrowser{
+	text-align:center;
+	height:55px;
+	line-height:55px;
+	width:100%;
+	background-color:#FFFFBB;
+	font-size:15px;
+	display: none;
+}
+.tishi{
+	float:left;
+    background-image:url(../images/boy_bg.png);
+	width:33px;
+	height:31px;
+	background-position:-247px -57px;
+	margin-top:11px;
+	margin-right:6px;
+}
+.closeTip{
+	width:70px;
+	float:left;
+	margin-left:10px;
+	padding-top:0px;
+	font-size:13px;
+}
+
+.closeButton{
+	 background-image:url(../images/boy_bg.png);
+	 width:23px;
+	 height:24px;
+	 background-position:-449px -68px;
+	 float:right;
+	 z-index:100;
+}
+#tips{
+	background-image:url(../images/course_red_flag.png);
+	background-repeat:no-repeat;
+	background-position:right bottom;
+	
+}
+#toblack{
+	color:#000;
+}
+.tooltip {
+	z-index:600;
+    background-color:gray;
+    font-size:14px;
+    width:260px;
+    padding:10px;
+    color:#fff;
+  }
+  
+  /* 学分和GPA统计说明*/
+/********************************************
+*********************************************
+*********************************************/
+.scoreInform{
+	text-align:left;
+	font-size:12px;
+	font-family:"微软雅黑";
+	letter-spacing:2px;
+	line-height:20px;
+	padding-left:15px;
+	padding-right:5px;
+	margin-top:5px;
+	margin-left:3px;
+	
+	
+}
+.informContent{
+	border-top:1px solid #AAAAAA;
+}
+.xuhao{
+	float:left;
+	margin-top:7px;
+	margin-left:5px;
+}
+#inform{
+	margin-top:15px;
+}
+ 
